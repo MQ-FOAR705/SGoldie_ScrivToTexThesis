@@ -1,13 +1,7 @@
-# FOAR705_SGoldie_Assignments
-Creating repository for FOAR705 Assignment Documents
+# FOAR705_SGoldie_ScrivToTexThesis
+Repository for Scrivener to Tex Project for FOAR705
 
-Overleaf Share Link: https://www.overleaf.com/read/hjncgfncpmgk
-
-Completed Assignments:
-Scoping Part 1
-Scoping Part 2
-Elaboration
-
-
-Notes:
-OSP Assignment Removed
+Proof of Concept Instructions
+Creative Thesis Template.scrivtemplate
+LatexThesis.ini
+Thesis Test Files (Folder)
