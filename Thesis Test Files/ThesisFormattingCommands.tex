@@ -17,13 +17,22 @@
 \usepackage{fancyhdr}
 %package to include header and footer information.
 \pagestyle{fancy}
-\fancyhf{}
-\rhead{}%Right Side of Header
-\lhead{}%Left Side of Header
-\lfoot{}%Left side of Footer
-\rfoot{Page \thepage}
+\fancyhead{} % clear all header fields
+\fancyfoot{} % clear all footer fields
+\fancyhead[LE]{THESIS TITLE} %This needs to be entered manually
+\fancyhead[RO]{CHAPTER TITLE} %This needs to be entered manually
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
 
+% Fancy header Arguments - 
+% L = left field
+% R = Right field
+% C = Centre field
+% O = Odd Pages
+% E = Even Pages
 
+% end of preamble
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
 
@@ -61,16 +70,28 @@
 
 
 \pagebreak
+
+%in the exported file from Scrivener, some of the sections are automatically assigned the command 'part', and these will need to be changed to 'chapter*'
+% Do this for the Declaration, Abstract, Acknowledgement, Introduction, Literature Review, Conclusion, and Works Cited. 
+%You will also need to itemize the Works Cited List if you want it to be displayed with bullet points. 
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Copy and Paste this section following the front matter documents - eg: declaration, abstract, and acknowledgements
+\pagebreak 
 
 \tableofcontents
+\label{contents}
 
 \pagebreak
 
 \mainmatter
 
-%in the exported file from Scrivener, some of the sections are automatically assigned the command 'part', and these will need to be changed to 'chapter*'
-% Do this for the Declaration, Abstract, Acknowledgement, Introduction, Literature Review, Conclusion, and Works Cited. 
-%You will also need to itemize the Works Cited List if you want it to be displayed with bullet points. 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Copy and paste this section to the END of your thesis file
+\backmatter
+
+\end{document}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
