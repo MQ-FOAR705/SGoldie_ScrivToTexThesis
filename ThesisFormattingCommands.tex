@@ -1,0 +1,100 @@
+\documentclass[a4paper]{memoir}
+% document class memoir will create a book like format that is highly customizable
+\usepackage[utf8]{inputenc}
+
+
+\usepackage{geometry}
+% package for setting page format and size, and setting paragraph indents, paragraph spacing, and line spacing. 
+\geometry{a4paper, left=25mm, right=25mm, top=25mm, bottom=25mm}
+\setlength{\parindent}{2em}
+\setlength{\parskip}{1em}
+\renewcommand{\baselinestretch}{1.5}
+% for Baseline stretch
+% 1 = 1 line spacing in Word 
+% 1.3 = 1.5 line spacing in Word 
+% 1.5 = double spacing in Word
+
+
+\usepackage{fancyhdr}
+%package to include header and footer information.
+\pagestyle{fancy}
+\fancyhead{} % clear all header fields
+\fancyfoot{} % clear all footer fields
+\fancyhead[LE]{THESIS TITLE} %This needs to be entered manually LE means this field appears on the even numbered pages in the left side position
+\fancyhead[RO]{CHAPTER TITLE} %This needs to be entered manually RO means this field appears on the odd numbered pages in the right side position
+\fancyfoot[C]{\thepage} %the page number is centered
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+
+% Fancy header Arguments - 
+% L = left field
+% R = Right field
+% C = Centre field
+% O = Odd Pages
+% E = Even Pages
+
+
+% end of preamble
+
+\begin{document}
+
+\frontmatter
+% details for your title page
+% You will need to enter this information manually if you wish to keep this style of formatting.
+
+\vspace*{2.5cm}
+\begin{center}
+    \huge{Your Awesome Research Thesis Title}
+
+    \huge{\&}
+
+    \emph{\huge{Your Creative Component Title}}
+
+
+\vspace{2.5cm}
+    \Large{Your Name}
+
+    \normalsize{Your certifications}
+
+    Your student number
+
+\vspace{2cm}
+    \Large{Great University}
+
+    \normalsize{Faculty of Awesome}
+
+    Department of Whizzo
+
+    Date Submitted: Infinity
+
+
+\end{center}
+
+
+\pagebreak
+
+% In the exported file from Scrivener, some of the sections are automatically assigned the command 'part', and these will need to be changed to 'chapter*'
+%  Do this for the Declaration, Abstract, Acknowledgement, Introduction, Literature Review, Conclusion, and Works Cited. 
+% You will also need to itemize the Works Cited List if you want it to be displayed with bullet points. 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Copy and Paste this section following the front matter documents - eg: declaration, abstract, and acknowledgements
+\pagebreak 
+
+\tableofcontents
+\label{contents}
+
+\pagebreak
+
+\mainmatter
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Copy and paste this section to the END of your thesis file
+\backmatter
+
+\end{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
